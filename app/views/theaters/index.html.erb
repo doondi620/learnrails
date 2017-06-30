@@ -1,0 +1,32 @@
+<h1>Theaters</h1>h1>
+<table class= 'table table-bordered table-striped'>
+  <tr>
+    <th>name</th>
+    <th>city</th> 
+    <th>state</th>
+    <th>country</th>
+    <th>update</th>
+    <th>delete</th>
+  </tr>
+
+  <%= @theaters.each do |theater| %>
+	  <tr>
+	    <td><%= theater.name %></td> 
+	    <td><%= theater.city %></td> 
+	    <td><%= theater.state%></td>
+	    <td><%= theater.country %></td>
+	    <td><%= link_to 'Update', theater_path(id: theater.id) %></td>
+      <td><%= link_to 'delete', theater_path(id: theater.id), :method => 'delete' %></td>
+	  </tr>
+ 	<% end %>
+</table>
+
+<style type="text/css">
+.table {
+   border: 1px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+</style>

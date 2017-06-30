@@ -1,0 +1,9 @@
+<h1>Theater</h1>
+<%= form_for @theater, url: theater_path(id: @theater.id), method: :put do |f| %>
+	name: <%= text_field_tag :name, @theater.name %>
+	city: <%= text_field_tag :city, @theater.city  %>
+	state: <%= text_field_tag :state, @theater.state %>
+	country: <%= text_field_tag :country, @theater.country  %>
+
+	<%= submit_tag 'Update' %>
+<% end %>

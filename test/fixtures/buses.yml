@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  from: MyString
+  to: MyString
+  terminal: MyString
+  bus_stand_id: 
+
+two:
+  name: MyString
+  from: MyString
+  to: MyString
+  terminal: MyString
+  bus_stand_id: 

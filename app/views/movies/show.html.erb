@@ -1,0 +1,9 @@
+<h1>Movie</h1>
+<%= form_for @movie, url: movie_path(id: @movie.id), method: :put do |f| %>
+	name: <%= text_field_tag :name, @movie.name %>
+	Hero: <%= text_field_tag :hero, @movie.hero  %>
+	Heroin: <%= text_field_tag :heroin, @movie.heroin  %>
+	Director: <%= text_field_tag :director, @movie.director  %>
+
+	<%= submit_tag 'Update' %>
+<% end %>

@@ -1,0 +1,9 @@
+<h1>Theater</h1>
+<%= form_for @theater, url: '/theaters/' do |f| %>
+	name: <%= text_field_tag :name %>
+	city: <%= text_field_tag :city %>
+	state: <%= text_field_tag :state %>
+	country: <%= text_field_tag :country %>
+
+	<%= submit_tag 'Submit' %>
+<% end %>

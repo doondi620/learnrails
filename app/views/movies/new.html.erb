@@ -1,0 +1,9 @@
+<h1>Movie</h1>
+<%= form_for @movie, url: '/movies/' do |f| %>
+	name: <%= text_field_tag :name %>
+	Hero: <%= text_field_tag :hero %>
+	Heroin: <%= text_field_tag :heroin %>
+	Director: <%= text_field_tag :director %>
+
+	<%= submit_tag 'Submit' %>
+<% end %>

@@ -1,0 +1,32 @@
+<h1>Movies</h1>h1><td><%= link_to 'new', new_movie_path %></td>
+<table class= 'table table-bordered table-striped'>
+  <tr>
+    <th>name</th>
+    <th>hero</th> 
+    <th>Heroin</th>
+    <th>Director</th>
+    <th>update</th>
+    <th>delete</th>
+  </tr>
+
+  <%= @movies.each do |movie| %>
+	  <tr>
+	    <td><%= movie.name %></td> 
+	    <td><%= movie.hero %></td> 
+	    <td><%= movie.heroin %></td>
+	    <td><%= movie.director %></td>
+	    <td><%= link_to 'update', movie_path(id: movie.id) %></td>
+      <td><%= link_to 'delete', movie_path(id: movie.id), :method => 'delete' %></td>
+     </tr>
+ 	<% end %>
+</table>
+
+<style type="text/css">
+.table {
+   border: 1px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+</style>
